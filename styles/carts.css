@@ -1,0 +1,148 @@
+/* ==========================
+      CART PAGE CSS
+   ========================== */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+.cartsSectionsWrapper {
+    width: 80%;
+    margin: 50px auto;
+}
+
+/* ==========================
+      CART TABLE
+   ========================== */
+
+.cartsSectionsWrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.cartsSectionsWrapper th {
+    text-align: left;
+    padding: 12px;
+    background: #ff523b;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.cartsSectionsWrapper td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* CART ROW CONTENT */
+.cart-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.cart-info img {
+    width: 75px;
+    height: 75px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.cart-info-details p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cart-info-details small {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.cart-info-details a {
+    font-size: 13px;
+    color: #ff523b;
+    text-decoration: none;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.cartsSectionsWrapper input[type="number"] {
+    width: 55px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+/* ==========================
+      TOTAL PRICE SECTION
+   ========================== */
+
+.totalPrice {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.totalPrice table {
+    float: right;
+    width: 250px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.totalPrice td {
+    padding: 8px 0;
+    font-size: 15px;
+}
+
+.checkoutBtn {
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* ==========================
+        RESPONSIVE
+   ========================== */
+
+@media (max-width: 768px) {
+    .cartsSectionsWrapper {
+        width: 95%;
+    }
+
+    .cart-info img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cart-info-details p {
+        font-size: 13px;
+    }
+
+    .cartsSectionsWrapper input[type="number"] {
+        width: 45px;
+        padding: 5px;
+    }
+
+    .totalPrice table {
+        width: 100%;
+        float: none;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+    }
+}
